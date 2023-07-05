@@ -1,0 +1,37 @@
+{
+    "Warrior":{
+        "HP": 100,
+        "Abilities": ["Armour Boost"],
+        "Armour": 5,
+        "Evasion": 20,
+        "Damage": 0
+    },
+    "Priest":{
+        "HP": 90,
+        "Abilities": ["Heal"],
+        "Armour": 4,
+        "Evasion": 20,
+        "Damage": 0
+    },
+    "Mage":{
+        "HP": 70,
+        "Abilities": ["Firestorm"],
+        "Armour": 1,
+        "Evasion": 5,
+        "Damage": 0
+    },
+    "Rouge":{
+        "HP": 80,
+        "Abilities": ["Dodge"],
+        "Armour": 3,
+        "Evasion": 20,
+        "Damage": 0
+    },
+    "Archer":{
+        "HP": 80,
+        "Abilities": ["Headshot"],
+        "Armour": 2,
+        "Evasion": 15,
+        "Damage": 0
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "cli-clash",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.js",
+  "scripts": {
+    "clash": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtamas020/CLI-Clash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtamas020/CLI-Clash/issues"
+  },
+  "homepage": "https://github.com/dtamas020/CLI-Clash#readme"
+}

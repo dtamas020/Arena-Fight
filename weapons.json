@@ -1,0 +1,66 @@
+{
+    "Sword": {
+        "Wielders": [
+            "Warrior",
+            "Priest",
+            "Mage",
+            "Rouge",
+            "Archer"
+        ],
+        "Damage": {
+            "min": 8,
+            "max": 12
+        },
+        "Chance": 90
+    },
+    "Dagger": {        
+        "Wielders": [
+            "Rouge"
+        ],
+        "Damage": {
+            "min": 4,
+            "max": 5
+        },
+        "Chance": 98
+    },
+    "WarHammer": {        
+        "Wielders": [
+            "Priest"
+        ],
+        "Damage": {
+            "min": 10,
+            "max": 15
+        },
+        "Chance": 93
+    },
+    "BattleAxe": {
+        "Wielders": [
+            "Warrior"
+        ],
+        "Damage": {
+            "min": 12,
+            "max": 15
+        },
+        "Chance": 92
+    },
+    "Bow": {
+        "Wielders": [
+            "Archer"
+        ],
+        "Damage": {
+            "min": 7,
+            "max": 12
+        },
+        "Chance": 89
+    },
+    "Wand": {
+        "Wielders": [
+            "Mage"
+        ],
+        "Damage": {
+            "min": 9,
+            "max": 15
+        },
+        "Chance": 97
+    }
+}

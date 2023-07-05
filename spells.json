@@ -1,0 +1,32 @@
+{
+    "Armour Boost": {
+        "Property": "Armour",
+        "Quantity": 10,
+        "Target":"self",
+        "turnsUntilActive": 1
+    },
+    "Dodge": {
+        "Property": "Evasion",
+        "Quantity": 100,
+        "Target":"self",
+        "turnsUntilActive": 1
+    },
+    "Firestorm": {
+        "Property": "Damage",
+        "Quantity": 20,
+        "Target":"self",
+        "turnsUntilActive": 1
+    },
+    "Headshot": {
+        "Property": "Damage",
+        "Quantity": 20,
+        "Target":"self",
+        "turnsUntilActive": 1
+    },
+    "Heal": {
+        "Property": "HP",
+        "Quantity": 10,
+        "Target":"self",
+        "turnsUntilActive": 0
+    }
+}
