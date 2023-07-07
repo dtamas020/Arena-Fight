@@ -181,7 +181,7 @@ class Arena {
     // One column, One Hero
     current_details_of_fighters() {
         let details = {}
-        let labels = { "Name": "name", "Class": "heroClass", "HP": "HP", "Armour": "Armour", "Evasion": "Evasion", "Character Damage": "Damage" }
+        let labels = { "Name": "name", "Class": "heroClass", "HP": "HP", "Armour": "Armour", "Evasion": "Evasion", "Character Damage": "DefaultDamage" }
 
         Object.keys(labels).forEach(label => {
             let subobj = {}

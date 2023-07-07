@@ -24,7 +24,7 @@ class Hero {
         this.Abilities = hero_classes[this.heroClass].Abilities
         this.Armour = hero_classes[this.heroClass].Armour
         this.Evasion = hero_classes[this.heroClass].Evasion
-        this.Damage = hero_classes[this.heroClass].Damage
+        this.DefaultDamage = hero_classes[this.heroClass].DefaultDamage
     }
 
     equipWeapon(weapon) {
@@ -89,10 +89,10 @@ class Hero {
                     let weaponDamage = this.weapon.get_weapon_damage()
                     let reducer = Math.floor(opponent.Armour / 3)
 
-                    let dealtDamage = this.Damage + (weaponDamage - reducer)
+                    let dealtDamage = this.DefaultDamage + (weaponDamage - reducer)
 
                     opponent.HP -= dealtDamage
-                    attack = { type: "hit", damage: { hero_damage: weaponDamage + this.Damage, dealtDamage: dealtDamage, reducer: reducer }, opponent: opponent }
+                    attack = { type: "hit", damage: { hero_damage: weaponDamage + this.DefaultDamage, dealtDamage: dealtDamage, reducer: reducer }, opponent: opponent }
                 }
                 else {
                     attack = { type: "miss", opponent: opponent }
