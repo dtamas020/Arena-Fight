@@ -41,14 +41,13 @@ class Hero {
     effect_reached_target(effect) {
         this[effect.details.Property] += effect.details.Quantity
         if (effect.details.turns_until_active != 0)
-            this.effects.push({ receivedInTurn: Arena.number_of_turn, ...effect })
+            this.effects.push({ receivedInTurn: this.arena.numberOfTurns, ...effect })
     }
 
     // We check that if this hero has any expired spell, than it will be returned.
     clear_expired_spells() {
-        let clearedSpells = []
-        clearedSpells = this.effects.map((effect, index) => {
-            if (effect.details.turnsUntilActive + effect.receivedInTurn <= Arena.number_of_turn) {
+        let clearedSpells = this.effects.map((effect, index) => {
+            if (effect.details.turnsUntilActive + effect.receivedInTurn <= this.arena.numberOfTurns) {
                 this.effects.splice(index, 1)
                 this[effect.details.Property] -= effect.details.Quantity
 
@@ -81,7 +80,7 @@ class Hero {
     // This Hero tries to attack one random of its opponents.
     // If the attack is successful, then informations about the attack is returned
     attack_opponent_with_weapon() {
-        let attack = { type: "not_wielder"}
+        let attack = { type: "not_wielder" }
         if (can_hero_use_its_weapon(this)) {
             let opponent = choose_opponent(this)
 
@@ -91,7 +90,7 @@ class Hero {
                     let reducer = Math.floor(opponent.Armour / 3)
 
                     let dealtDamage = this.Damage + (weaponDamage - reducer)
-        
+
                     opponent.HP -= dealtDamage
                     attack = { type: "hit", damage: { hero_damage: weaponDamage + this.Damage, dealtDamage: dealtDamage, reducer: reducer }, opponent: opponent }
                 }

@@ -1,5 +1,5 @@
 const { Warrior, Mage, Priest, Rouge, Archer } = require('./classes/heroes/subclasses.js')
-const {Sword, Dagger, WarHammer, BattleAxe, Bow, Wand} = require('./classes/weapons/subclasses.js')
+const { Sword, Dagger, WarHammer, BattleAxe, Bow, Wand } = require('./classes/weapons/subclasses.js')
 const Arena = require('./classes/arena')
 
 let warrior = new Warrior("Warrior");
@@ -17,4 +17,5 @@ rouge.equipWeapon(new Dagger())
 let archer = new Archer("Archer")
 archer.equipWeapon(new Bow())
 
-Arena.tournament([warrior, priest, archer])
+let arena = new Arena([warrior, priest, archer])
+arena.fight()    
